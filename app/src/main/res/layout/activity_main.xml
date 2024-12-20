@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/note_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter note" />
+
+    <ImageView
+        android:id="@+id/note_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/capture_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture Image" />
+
+    <Button
+        android:id="@+id/save_note_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Note" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="Logout" />
+</LinearLayout>
