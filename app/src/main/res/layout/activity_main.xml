@@ -15,6 +15,14 @@
         android:layout_height="200dp"
         android:scaleType="centerCrop"
         android:background="@android:color/darker_gray" />
+    <TextView
+        android:id="@+id/light_sensor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Sensor Data"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
 
     <Button
         android:id="@+id/capture_image_button"
@@ -27,6 +35,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save Note" />
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Map"
+        android:layout_below="@id/googleButton"
+        android:layout_marginTop="16dp" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

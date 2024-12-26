@@ -2,25 +2,120 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#F5FFFA"
+    android:padding="24dp">
 
-    <ImageView
-        android:id="@+id/app_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp" />
-
+    <!-- Login Title -->
     <TextView
-        android:id="@+id/welcome_text"
+        android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to MyApp"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_below="@id/app_logo"
+        android:text="Login"
+        android:textSize="32sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-black"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginTop="80dp" />
 
-    <!-- Firebase UI will handle the login button -->
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_below="@id/loginTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFDAB9"
+        android:layout_below="@id/emailLabel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:hint="........."
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_below="@id/emailInput"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFDAB9"
+        android:layout_below="@id/passwordLabel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:hint="........."
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#2D7F98"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:elevation="4dp" />
+
+    <!-- Sign Up Option Text -->
+    <TextView
+        android:id="@+id/noAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account?"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:backgroundTint="#2D7F98"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@id/noAccountText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:elevation="4dp" />
+
 </RelativeLayout>
