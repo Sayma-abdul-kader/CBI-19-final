@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FFFA"
+    android:padding="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Sign-up Title -->
+        <TextView
+            android:id="@+id/signupTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign-up"
+            android:textSize="32sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+
+        <!-- Username Label and Input -->
+        <TextView
+            android:id="@+id/usernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_below="@id/signupTitle"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFDAB9"
+            android:layout_below="@id/usernameLabel"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:hint="Enter your name......."
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Email Label and Input -->
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_below="@id/usernameInput"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFDAB9"
+            android:layout_below="@id/emailLabel"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:hint="example@gmail.com"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Contact Number Label and Input -->
+        <TextView
+            android:id="@+id/contactLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact number"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_below="@id/emailInput"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/contactInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFDAB9"
+            android:layout_below="@id/contactLabel"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:hint="Enter your phone number"
+            android:inputType="phone"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Password Label and Input -->
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_below="@id/contactInput"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFDAB9"
+            android:layout_below="@id/passwordLabel"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:hint="Enter your password......."
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:backgroundTint="#2D7F98"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@id/passwordInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:elevation="4dp" />
+
+        <!-- Or Text -->
+        <TextView
+            android:id="@+id/orText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_below="@id/signupButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <!-- Continue with Google Button -->
+        <Button
+            android:id="@+id/googleButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Continue with Google"
+            android:backgroundTint="#2D7F98"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@id/orText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log in"
+            android:backgroundTint="#2D7F98"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@id/googleButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:elevation="4dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
